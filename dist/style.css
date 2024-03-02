@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+
+body > div {
+  width: 100vmin;
+  margin: auto;
+}
+
+div {
+  border: 5vmin double red;
+  border-radius: 50%;
+  animation: boop 8s infinite ease-in-out alternate;
+}
+
+@keyframes boop {
+  to {
+    transform: scale(0.85);
+    filter: hue-rotate(64deg);
+  }
+}
